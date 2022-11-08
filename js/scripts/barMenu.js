@@ -2,6 +2,7 @@
 const barBtn = document.querySelector(".base__size");
 const barMenu = document.querySelector(".base__sizes");
 const baseOption = document.querySelectorAll(".base__option");
+const menu = document.querySelector(".header__menu");
 // Product info variables
 
 const productImage = document.querySelector(".base__picture-image");
@@ -12,7 +13,7 @@ const productPrice = document.querySelector(".base__price");
 //basket variables
 const addBtn = document.querySelector(".base__button");
 const tracker = document.querySelector(".header__basket-tracker");
-
+menu.style.transform = 'translateY(-100%)';
 //Functional variables=========================================
 let nameCounter = 0;
 
