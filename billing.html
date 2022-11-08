@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Billing</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <style>body{opacity: 0;}</style> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="../index.html" class="header__logo">NorthStar</a>
+          <div class="header__body">
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="../index.html" class="header__link">HOME</a>
+                </li>
+                <li class="header__item header-about">
+                  <a href="about.html" class="header__link">About</a>
+                </li>
+                <li class="header__item">
+                  <a href="contact.html" class="header__link">contact us</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__actions">
+              <div class="header__user">
+                <a href="billing.html" class="header__user-link">
+                  <picture
+                    ><source srcset="img/icons/user.webp" type="image/webp" />
+                    <img src="img/icons/user.png" alt="user-icon"
+                  /></picture>
+                </a>
+              </div>
+              <div class="header__basket">
+                <a href="cart.html" class="header__basket-link">
+                  <picture
+                    ><source srcset="img/icons/basket.webp" type="image/webp" />
+                    <img src="img/icons/basket.png" alt="basket-icon"
+                  /></picture>
+                  <div class="header__basket-tracker">0</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="demo-cont">
+            <div class="demo">
+              <div class="menu-icon">
+                <input class="menu-icon__cheeckbox" type="checkbox" />
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <div class="billing">
+          <div class="billing__container">
+            <div class="cart__path">home / <span>checkout</span></div>
+          </div>
+        </div>
+        <section class="details">
+          <div class="details__container">
+            <h1 class="details__title billing-title">Billing details</h1>
+            <div class="details__form full-name">
+              <p class="details__label-name inp-label">Full Name*</p>
+              <input type="text" class="details__input" />
+            </div>
+            <div class="details__form street-address">
+              <p class="details__label-name inp-label">Street address*</p>
+              <input type="text" class="details__input" />
+            </div>
+            <div class="details__form town-city">
+              <p class="details__label-name inp-label">Town / City*</p>
+              <input type="text" class="details__input" />
+            </div>
+            <div class="details__form phone">
+              <p class="details__label-name inp-label">Phone*</p>
+              <input type="text" class="details__input" />
+            </div>
+            <div class="details__form email-address">
+              <p class="details__label-name inp-label">Email address*</p>
+              <input type="text" class="details__input" />
+            </div>
+          </div>
+        </section>
+        <section class="order">
+          <div class="order__container">
+            <h2 class="order__title billing-title">Your order</h2>
+            <div class="order__body">
+              <div class="order__item order-param">
+                <div class="order__prouduct order-left">Product</div>
+                <div class="order__total order-right">Total</div>
+              </div>
+              <div class="order__insert">
+                <!-- <div class="order__item">
+                  <div class="order__name order-left">Plain White Shirt</div>
+                  <div class="order__price order-right">$59.00</div>
+                </div> -->
+              </div>
+              <div class="order__item">
+                <div class="order__subtotal order-left">Subtotal</div>
+                <div class="order__subtotal-price order-right">$59.00</div>
+              </div>
+              <div class="order__item">
+                <div class="order__fulltotal order-left"></div>
+                <div class="order__fulltotal-price order-right">$59.00</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="delivery">
+          <div class="delivery__container">
+            <div class="delivery__info">
+              <p class="delivery__info-text">
+                Cash on delivery. Please contact us if you require assistance or
+                wish to make alternate arrangements.
+              </p>
+            </div>
+            <div class="delivery__body">
+              <div class="delivery__button">
+                <button class="delivery-btn">place order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__body">
+            <div class="footer__links">
+              <div class="footer__column">
+                <p class="footer__column-name">Company info</p>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">About Us</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Latest Posts</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Contact Us</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="cart.html" class="footer__link">Shop</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <p class="footer__column-name">help links</p>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Tracking</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Order Status</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Delivery</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Shipping Info</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <p class="footer__column-name">useful links</p>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Special Offers</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Gift Cards</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Advetising</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Terms of Use</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__contact">
+              <p class="footer__contact-name">get in the know</p>
+              <form action="" class="footer__form">
+                <input
+                  placeholder="Enter email"
+                  type="text"
+                  class="footer__input"
+                />
+                <button class="footer__button">
+                  <picture
+                    ><source srcset="img/icons/arrow.webp" type="image/webp" />
+                    <img src="img/icons/arrow.png" alt="arrow"
+                  /></picture>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="footer__line"></div>
+          <div class="footer__policy">
+            <div class="footer__info">
+              <p class="footer__name-policy">© 2020 NorthStar eCommerce</p>
+              <p class="footer__name-policy">
+                Privacy Policy Terms & Conditions
+              </p>
+            </div>
+            <div class="footer__payments">
+              <div class="footer__payment">
+                <picture
+                  ><source srcset="img/payments/visa.webp" type="image/webp" />
+                  <img src="img/payments/visa.png" alt="visa"
+                /></picture>
+              </div>
+              <div class="footer__payment">
+                <picture
+                  ><source
+                    srcset="img/payments/master-card.webp"
+                    type="image/webp" />
+                  <img src="img/payments/master-card.png" alt="master-card"
+                /></picture>
+              </div>
+              <div class="footer__payment">
+                <picture
+                  ><source
+                    srcset="img/payments/pay-pal.webp"
+                    type="image/webp" />
+                  <img src="img/payments/pay-pal.png" alt="pay-pal"
+                /></picture>
+              </div>
+              <div class="footer__payment">
+                <picture
+                  ><source
+                    srcset="img/payments/electron.webp"
+                    type="image/webp" />
+                  <img src="img/payments/electron.png" alt="electron"
+                /></picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/scripts/billing.js"></script>
+  </body>
+</html>
