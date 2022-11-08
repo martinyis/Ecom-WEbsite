@@ -28,7 +28,6 @@ tracker.innerHTML = JSON.parse(localStorage.getItem("tracker"))
   ? JSON.parse(localStorage.getItem("tracker"))
   : 0;
 //BurgerMenu functions===========================================================================================
-menu.style.transform = 'translateY(-100%);
 menu.classList.add("disactive");
 button.addEventListener("click", function () {
   menu.classList.toggle("active");
