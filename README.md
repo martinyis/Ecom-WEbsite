@@ -32,4 +32,4 @@ List of contriubutors:
 
 ## License
 
-MIT license @ [martinyis](https://github.com/martinyis)
+license @ [martinyis](https://github.com/martinyis)
