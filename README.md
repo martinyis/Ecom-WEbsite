@@ -2,7 +2,7 @@
 Ecommerce website
 
 ## Demo link:
-Access my site at [ECOM WEBSITE](https://martinyis.github.io/Ecom-WEbsite/)
+Access my site at [ECOM WEBSITE](https://tangerine-malasada-20b21c.netlify.app/product.html)
 
 ## Table of Content:
 
