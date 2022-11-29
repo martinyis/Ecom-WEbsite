@@ -1,22 +1,12 @@
 //Genreal variables==================================================================================================================
-const cart = document.querySelector(".cart__body");
-const subTotal = document.querySelector(".totals__subtotals-price ");
-const fullTotal = document.querySelector(".totals__total-price");
-const proceedBtn = document.querySelector(".totals__btn");
-// const menu = document.querySelector(".header__menu");
-// const button = document.querySelector(".demo-cont");
-// const headerBasker = document.querySelector(".header__basket");
-// const body = document.querySelector("body");
+const cart = document.querySelector('.cart__body');
+const subTotal = document.querySelector('.totals__subtotals-price ');
+const fullTotal = document.querySelector('.totals__total-price');
+const proceedBtn = document.querySelector('.totals__btn');
 
-// menu.classList.add("disactive");
-// button.addEventListener("click", function () {
-//   menu.classList.toggle("active");
-//   body.classList.toggle("lock");
-//   headerBasker.classList.toggle("minus-zindex");
-// });
 //Proceed to payment function=========================================================================================================
-proceedBtn.addEventListener("click", function () {
-  window.location.href = "../billing.html";
+proceedBtn.addEventListener('click', function () {
+  window.location.href = '../billing.html';
 });
 //Render a product from a local storage=========================================================================================================
 const generateProduct = function () {
@@ -26,7 +16,7 @@ const generateProduct = function () {
     //get value
     let value = JSON.parse(localStorage.getItem(key));
     //create a new div
-    if (key !== "tracker" && key !== "info") {
+    if (key !== 'tracker' && key !== 'info') {
       let markup = `<div class="cart__item" data-product-id="${key}">
       <div class="cart__line"></div>
       <div class="cart__item-box">
@@ -71,7 +61,7 @@ const generateProduct = function () {
       fullTotal.textContent = `$${
         price + Number(fullTotal.textContent.slice(1))
       }`;
-      cart.insertAdjacentHTML("beforeend", markup);
+      cart.insertAdjacentHTML('beforeend', markup);
     }
   }
 };
@@ -87,17 +77,17 @@ const decreasePrice = function (value) {
 };
 
 const decreaseTracker = function () {
-  let tracker = JSON.parse(localStorage.getItem("tracker"));
+  let tracker = JSON.parse(localStorage.getItem('tracker'));
   tracker--;
-  localStorage.setItem("tracker", JSON.stringify(tracker));
-  document.querySelector(".header__basket-tracker").textContent = tracker;
+  localStorage.setItem('tracker', JSON.stringify(tracker));
+  document.querySelector('.header__basket-tracker').textContent = tracker;
 };
-const closeItem = document.querySelectorAll(".cart__item-close");
+const closeItem = document.querySelectorAll('.cart__item-close');
 closeItem.forEach((item) => {
-  item.addEventListener("click", function (e) {
+  item.addEventListener('click', function (e) {
     //delete closets cart__item
-    e.target.closest(".cart__item").remove();
-    let prodcutId = e.target.closest(".cart__item").dataset.productId;
+    e.target.closest('.cart__item').remove();
+    let prodcutId = e.target.closest('.cart__item').dataset.productId;
     let price = JSON.parse(localStorage.getItem(prodcutId)).price;
     decreaseTracker();
     decreasePrice(price);
