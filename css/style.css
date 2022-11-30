@@ -241,7 +241,7 @@ body {
   overflow-x: hidden;
 }
 
-[class*="__container"] {
+[class*='__container'] {
   max-width: 1240px;
   margin: 0px auto;
   padding: 0 15px;
@@ -844,7 +844,7 @@ body {
   background: #ffffff;
   -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.04);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.04);
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1281,6 +1281,7 @@ body {
 }
 
 .base__picture-image {
+  max-height: 690px;
   width: 100%;
 }
 
@@ -1481,7 +1482,7 @@ body {
   background: #fbfbfb;
   border: 1px solid #ebebeb;
   border-radius: 0px;
-  font-family: "Arimo";
+  font-family: 'Arimo';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1982,7 +1983,7 @@ body {
   width: 166px;
   height: 48px;
   background: #d6763c;
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1992,7 +1993,9 @@ body {
   color: #ffffff;
   border-radius: 3px;
 }
-
+.shoppings {
+  padding: 100px 0;
+}
 .page {
   padding-top: 0px;
 }
@@ -2029,7 +2032,7 @@ body {
 }
 
 @media (max-width: 1000px) {
-  [class*="__container"] {
+  [class*='__container'] {
     max-width: 900px;
     padding: 0 15px;
   }
@@ -2041,7 +2044,7 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  [class*="__container"] {
+  [class*='__container'] {
     max-width: 800px;
     padding: 0 15px;
   }
