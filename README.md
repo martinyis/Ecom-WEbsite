@@ -13,9 +13,8 @@ Access my site at [ECOM WEBSITE](https://tangerine-malasada-20b21c.netlify.app/p
 - [License](#license)
 
 ## About The App
-This Application is made for educational purpuses. Ecommerce website is a prototype of usual shopping website where you have ability to buy clothes online.
-You have abilty to see different products, put them into a cart with a different size. Alse you can modify items in cart and see a price of a product and a total price of your cart
-
+I would like to describe my eCommerce website as a well-designed and functional platform that allows users to easily browse and purchase products. I implemented the structural and presentational aspects of the website using HTML, CSS, Sass, and VS Code, and used BEM class naming to ensure a consistent and organized codebase. The website is fully responsive and adaptive, making it accessible on a variety of devices.
+The functional part of the website was implemented using JavaScript, and features such as the ability to search for products, add them to a cart, modify or delete items, and place an order were all smoothly integrated. The use of local storage to manage product information added an extra level of functionality and convenience. Additionally, the use of ES6 demonstrated a strong understanding of modern coding practices and techniques.
 ## Technologies
 I used Figma and public design to make this website.
 Layout of page was made on HTML and styles were written with help of Sass on Css
