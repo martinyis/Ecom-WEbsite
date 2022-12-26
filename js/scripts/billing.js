@@ -16,7 +16,6 @@ button.addEventListener("click", function () {
   headerBasker.classList.toggle("minus-zindex");
 });
 const renderItem = function () {
-  //looop thru stirage
   let price = 0;
   for (let i = 0; i < localStorage.length; i++) {
     //get key
