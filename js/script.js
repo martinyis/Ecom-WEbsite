@@ -1,21 +1,19 @@
-console.log('helo');
-
-//Default vatiables
+//Default vatiables=======================================================================//
 const menu = document.querySelector('.header__menu');
 const button = document.querySelector('.demo-cont');
 const tracker = document.querySelector('.header__basket-tracker');
 const footerForm = document.querySelector('.footer__form');
 const footerLink = document.querySelectorAll('.footer__link');
-//choose all document
+//Choose all document=====================================================================//
 const body = document.querySelector('body');
 const headerBasker = document.querySelector('.header__basket');
 
-//Produtcs variables===========================================================================
+//Produtcs variables===========================================================================//
 const product = document.querySelectorAll('.product');
 const burgerIcon = document.querySelector('.demo-cont');
 const about = document.querySelector('.header-about');
 const shopBtns = document.querySelectorAll('.shop-link');
-//Default functions============================================================================================
+//Default functions============================================================================================//
 footerLink.forEach((item) => {
   item.addEventListener('click', (e) => {
     e.preventDefault();
@@ -66,5 +64,3 @@ const renderProduct = function (e) {
 product.forEach((item) => {
   item.addEventListener('click', renderProduct);
 });
-
-// localStorage.clear();

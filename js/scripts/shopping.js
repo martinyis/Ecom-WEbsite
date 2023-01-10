@@ -29,7 +29,6 @@ const renderProduct = function (e) {
     .closest('.product')
     .querySelector('.product-price').textContent;
   let imgPath = e.target.closest('.product').querySelector('img').src;
-  console.log(name, price, imgPath);
   let info = {
     name: name,
     price: price,
@@ -39,6 +38,5 @@ const renderProduct = function (e) {
   localStorage.setItem('info', JSON.stringify(info));
 };
 product.forEach((item) => {
-  console.log('setted');
   item.addEventListener('click', renderProduct);
 });
