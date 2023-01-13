@@ -101,7 +101,9 @@ h6 {
   font-weight: inherit;
   font-size: inherit;
 }
-
+.hidden {
+  display: none;
+}
 /*
 &::-webkit-scrollbar {
 	display: none;
@@ -2315,4 +2317,18 @@ body {
   .founders__body {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.popup {
+  position: fixed;
+  top: 240px;
+  background-color: #555555;
+  max-width: 800px;
+  margin-left: 42%;
+  margin-right: 50%;
+  border-radius: 20px;
+}
+.popup__text {
+  margin: 100px;
+  width: 200px;
 }

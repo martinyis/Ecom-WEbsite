@@ -64,3 +64,5 @@ const renderProduct = function (e) {
 product.forEach((item) => {
   item.addEventListener('click', renderProduct);
 });
+
+localStorage.clear();
