@@ -5,13 +5,26 @@ const menu = document.querySelector('.header__menu');
 const button = document.querySelector('.demo-cont');
 const headerBasker = document.querySelector('.header__basket');
 const body = document.querySelector('body');
-
+const deliveryBtn = document.querySelector('.delivery-btn');
+const popupClose = document.querySelector('.popup__close');
 menu.classList.add('disactive');
 button.addEventListener('click', function () {
   menu.classList.toggle('disactive');
   menu.classList.toggle('active');
   body.classList.toggle('lock');
   headerBasker.classList.toggle('minus-zindex');
+});
+
+//delivery btn functionality=====================================================================//
+deliveryBtn.addEventListener('click', function () {
+  const popup = document.querySelector('.popup');
+  popup.classList.remove('hidden');
+  body.classList.add('lock');
+});
+popupClose.addEventListener('click', function () {
+  const popup = document.querySelector('.popup');
+  popup.classList.add('hidden');
+  body.classList.remove('lock');
 });
 const renderItem = function () {
   let price = 0;
