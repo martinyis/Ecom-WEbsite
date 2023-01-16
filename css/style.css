@@ -2324,11 +2324,17 @@ body {
   top: 240px;
   background-color: #555555;
   max-width: 800px;
-  margin-left: 42%;
-  margin-right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 20px;
 }
 .popup__text {
-  margin: 100px;
-  width: 200px;
+  margin: 30px;
+}
+
+.popup__close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
 }
