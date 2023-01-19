@@ -193,11 +193,13 @@ body {
 .minus-zindex {
   z-index: -10;
 }
+
+/*Activating a burger menu */
 .active {
   transform: translateY(0%);
 }
 .disactive {
-  transform: translateY(-100%);
+  transform: translateY(-120%);
 }
 /*
 make to image block postiotin relative and padding to bottom
